@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Para o meu amor</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-image: url('img/degrade.jpg');
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav img {
+      width: 80px;
+      height: auto;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .hero {
+      height: 400px;
+      background-image: url('img/degrade.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin: 20px 0 0 0;
+      padding: 0;
+    }
+
+    .featured {
+      background-image: url('img/degrade.jpg');
+      padding: 20px;
+    }
+
+    .featured h2 {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .featured p {
+      font-size: 24px;
+      margin: 20px 0 0 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .featured .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .featured .item {
+      width: calc(33.33% - 20px);
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .featured .item:hover .overlay {
+      opacity: 1;
+    }
+
+    .featured .item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .featured .item .overlay h3 {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .featured .item .overlay p {
+      font-size: 16px;
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+
+   .featured .item:nth-child(1) {
+  background-image: url("img/nos.jpeg");
+}
+
+.featured .item:nth-child(2) {
+  background-image: url("img/nosb.jpeg");
+}
+
+.featured .item:nth-child(3) {
+  background-image: url("img/nosc.jpeg");
+}
+.featured .item:nth-child(4) {
+  background-image: url("img/nosd.jpeg");
+}
+/* Estilos personalizados para o controle de reprodução de música */
+.audio-player {
+  display: flex;
+  align-items: center;
+}
+
+.audio-player audio {
+  display: none;
+}
+
+.audio-player .play-button {
+  background-color: #ffb6c1;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.audio-player .play-button:hover {
+  background-color: #ff99b0;
+}
+
+.audio-player .play-button::before {
+  content: '\25B6'; /* Símbolo de reprodução (triângulo) */
+  font-size: 24px;
+  color: white;
+}
+
+.audio-player .play-button.playing::before {
+  content: '\275A\275A'; /* Símbolo de pausa (duas barras verticais) */
+}
+
+.audio-player .play-button:focus {
+  outline: none;
+}
+</style>
+<div class="hero">
+  <h1>Ouça meu amor S2</h1>
+  <div class="audio-player">
+    <audio src="musica.mp4" id="audio" preload="auto"></audio>
+    <button class="play-button" id="playButton"></button>
+  </div>
+</div>
+ <div class="featured">
+        <h2>Momentos Especiais</h2>
+        <p>Alguns de nossos momentos meu amor:</p>
+        <div class="container">
+          <div class="item">
+            <div class="overlay">
+              <h3>Nosso primeiro reveillon juntos</h3>
+              <p>Um dos momentos importantes para mim pois nesse dia eu tive a certeza que desejo passar todos os outros com vc S2</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="overlay">
+              <h3>O Seu sorriso</h3>
+              <p>AAAAh o seu sorriso ele me encanta sempre que vejo me apaixono cada vez mais, ele me faz lembrar que junto com vc eu consigo e que sempre vou dar o meu melhor pra te ver sorrindo se for chorar que seja de alegria....</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="overlay">
+              <h3>O quanto eu TE AMO</h3>
+              <p>O quanto eu TE AMO meu amor não da pra ser escrito mas tenha certeza que vc é a pessoa mais importante pra mim e eu peço a Deus todos os dias que eu possa viver muitos outros momentos com vc meu bem, nunca esqueça eu estou aqui com vc TE AMO MUITOOOO S2</p>
+            </div>
+          </div>
+           <div class="item">
+              <div class="overlay">
+              <h3>em breve</h3>
+              <p>Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, ninguém separe".
+Mateus 19:6</p>
+            </div>
+    </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2023 -Dia dos namorados</p>
+      </footer>
+
+      <script>
+        // Código JavaScript para interações
+        const overlays = document.querySelectorAll(".overlay");
+
+        overlays.forEach((overlay) => {
+          overlay.addEventListener("click", () => {
+            // Adicione a lógica desejada para reproduzir o filme
+            console.log("Reproduzindo filme");
+          });
+        });
+      </script>
+      <script>
+          const audio = document.getElementById('audio');
+          const playButton = document.getElementById('playButton');
+
+          playButton.addEventListener('click', togglePlay);
+
+          function togglePlay() {
+            if (audio.paused) {
+              audio.play();
+              playButton.classList.add('playing');
+            } else {
+              audio.pause();
+              playButton.classList.remove('playing');
+            }
+          }
+      </script>
+    </body>
+    </html>
