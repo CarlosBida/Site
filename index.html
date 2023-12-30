@@ -186,12 +186,31 @@
 .audio-player .play-button:focus {
   outline: none;
 }
+.video-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Altura de 50% da altura da viewport, ajuste conforme necessário */
+}
+
+.video-player video {
+  width: auto;
+  max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
+  max-height: 100%; /* Garante que o vídeo não ultrapasse a altura da tela */
+}
 </style>
 <div class="hero">
   <h1>Ouça meu amor S2</h1>
   <div class="audio-player">
     <audio src="musica.mp4" id="audio" preload="auto"></audio>
     <button class="play-button" id="playButton"></button>
+  </div>
+</div>
+<div class="hero">
+  <h1>Ouça e Veja Nosso Amor S2</h1>
+ 
+  <div class="video-player">
+    <video src="nossovideo.mp4" id="video" preload="auto" controls></video>
   </div>
 </div>
  <div class="featured">
@@ -257,5 +276,34 @@ Mateus 19:6</p>
             }
           }
       </script>
-    </body>
-    </html>
+      <script>
+  const audio = document.getElementById('audio');
+  const playButton = document.getElementById('playButton');
+
+  playButton.addEventListener('click', togglePlay);
+
+  function togglePlay() {
+    if (audio.paused) {
+      audio.play();
+      playButton.classList.add('playing');
+    } else {
+      audio.pause();
+      playButton.classList.remove('playing');
+    }
+  }
+</script>
+<script>
+  const video = document.getElementById('video');
+
+  video.addEventListener('click', toggleVideo);
+
+  function toggleVideo() {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }
+</script>
+</body>
+</html>
